@@ -1,0 +1,147 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: white;
+}
+/*Top Navigation Bar*/
+nav{
+            display: flex;
+            justify-content: space-between;
+            background-color: black;
+            height: 100px;
+            align-items: center;
+            padding: 0 10rem;
+                & .logo{
+                   & a{
+                    color: white;
+                    text-decoration: none;
+                    font-size: 2rem;
+                   }
+                }
+            & .menu{
+                display:flex;
+                list-style: none;
+                & li{
+                    margin: 0 2rem;
+                        & a{
+                            color: white;
+                            text-decoration: none;
+                            font-size: 2rem;
+                                &:hover{
+                                    color:black;
+                                    background: white;
+                                    opacity: 90%;
+                                }
+                        }
+                }
+            }
+               
+        }  
+
+
+/*Seperator with the japanese words*/
+        .seperator{
+            display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+            height: 40px;
+            background-color: black;
+            box-shadow: 0px 2px 5px rgba(255, 255, 255, 0.5);
+            margin: 2px 5px;
+            align-items: center;
+                & p{
+                    color: white;
+                    text-align: center;
+                    font-size: 15px;
+                }
+        }
+
+
+/*First block of two sides contents*/
+        .container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            .box-1 {
+                background-color: black;
+                width: 50%;
+                min-height: 600px;
+                padding-left: 5rem;
+                color: white;
+                text-align: left;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                    
+                h1 {
+                    font-size: 2rem;
+                }
+       
+                p {
+                    &.briefintro {
+                        font-size: 25px;
+                        margin-top: 1px;
+                    }
+       
+                    &.selfdescription {
+                        font-size: 26px;
+                        margin-top: 2px;
+                    }
+                }
+            }
+            .box-2 {
+                background-color:black;
+                width: 50%;
+                min-height: 600px;
+                max-height: 700px;
+                padding: 2rem;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding-right: 5rem;
+                    & img{
+                        width: 70%;
+                        max-height: 400px;
+                    }
+            }
+        }
+        .myworks{
+            padding-top: 100px;
+            display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+            height: 200px;
+            background-color: black;
+            align-items: center;
+                & h3{
+                    color: white;
+                    text-align: center;
+                    font-size: 2.4rem;
+                }
+        }
+
+.gallery{
+    padding: 10px;
+    background-color: black;
+    display: inline-block;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        & img{
+            width: 40%;
+            height: 30%;
+            border-radius: 20px;
+            background-color: #171717;
+            margin: 10px 10px;
+        }
+}
